@@ -5,6 +5,7 @@
 }
 :root {
     --main-bg-color: #f7f8f8;
+    --graycolor: rgb(167, 170, 178);
 }
 html {
     font-size: 62.5%;
@@ -13,7 +14,7 @@ html {
 header {
     width: 100%;
     background: var(--main-bg-color);
-    margin-bottom: 5em;
+    margin-bottom: 2em;
 }
 .nav-menu {
     display: flex;
@@ -21,6 +22,9 @@ header {
     align-items: center;
     padding: 0 1.6rem;
     position: relative;
+    box-shadow: 2px 3px 21px 0px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 2px 3px 21px 0px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 2px 3px 21px 0px rgba(0, 0, 0, 0.12);
     .menu-button {
         display: none;
     }
@@ -31,13 +35,13 @@ header {
     ul {
         list-style: none;
         display: flex;
-        a {
+        .header-elements {
             text-decoration: none;
             color: #505666;
             text-transform: uppercase;
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             height: 100%;
-            padding: 20px 1.2rem;
+            padding: 15px 1.2rem;
             &:hover {
                 color: black;
                 background: white;
@@ -49,13 +53,81 @@ header {
             position: absolute;
             background: black;
             width: 100vw;
+            height: auto;
             left: 0;
-            top: 59.2px;
+            top: 47px;
             color: white;
             display: none;
+            padding: 2em 0;
+            overflow-x: scroll;
+            .dropdown__content__submenu {
+                border-right: 1px solid rgb(167, 170, 178);
+                margin: 0 1.6em;
+                h4 {
+                    margin-bottom: 10px;
+                    color: rgb(167, 170, 178);
+                }
+                .dropdown__content__submenu-list {
+                    display: flex;
+                    .dropdown__content__submenu-ancle {
+                        margin-right: 25px;
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            img {
+                                margin-bottom: 0.5em;
+                            }
+                            h5 {
+                                font-weight: bold;
+                                text-transform: none;
+                                margin-bottom: 0.4em;
+                                font-size: 1.6rem;
+                            }
+                            p {
+                                color: rgb(167, 170, 178);
+                                text-transform: none;
+                                font-size: 1.3rem;
+                                width: 160px;
+                            }
+                        }
+                    }
+                }
+            }
         }
         &:hover .dropdown__content {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+    }
+    .dropdown-b {
+        position: relative;
+        .dropdown-b__content {
+            position: absolute;
+            top: 100%;
+            left: calc(50% - 80px);
+            width: 160px;
+            text-align: center;
+            padding: 1em;
+            background: black;
+            text-transform: none;
+            display: none;
+
+            p {
+                font-size: 1.2rem;
+                color: var(--graycolor);
+            }
+        }
+        &:hover .dropdown-b__content {
             display: block;
+            background: black;
+            color: white;
+            &:hover {
+                background: var(--graycolor);
+                color: black;
+                p {
+                    color: black;
+                }
+            }
         }
     }
 }
@@ -73,7 +145,54 @@ header {
     }
 }
 .yellow-bar {
+    display: block;
     width: 100%;
     background: #fd3;
-    padding: 1rem;
+    padding: 1rem 1.6rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+    font-weight: 300;
+}
+.hero-section {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1em;
+    padding: 0 1em;
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        z-index: -100;
+    }
+    p {
+        font-size: 3rem;
+        color: white;
+    }
+    .hero-section__content__a {
+        grid-column: 1 / 3;
+        grid-row: 1 / 4;
+        background-image: url("https://img-cdn.tnwcdn.com/image?fit=600%2C300&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fsucks.jpeg&signature=b7bac75b4e1890bcbe3d9f436a6f0f31");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .hero-section__content__b {
+        grid-column: 3 / 4;
+        grid-row: 1 / 3;
+    }
+    .hero-section__content__c {
+        grid-column: 3 / 5;
+        grid-row: 3 / 6;
+    }
+
+    .hero-section__content__d {
+        grid-column: 4 / 5;
+        grid-row: 1 / 3;
+    }
+    .hero-section__content__f {
+        grid-column: 1 / 3;
+        grid-row: 4 / 6;
+    }
 }

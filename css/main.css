@@ -7,6 +7,7 @@
 
 :root {
   --main-bg-color: #f7f8f8;
+  --graycolor: rgb(167, 170, 178);
 }
 
 html {
@@ -17,7 +18,7 @@ html {
 header {
   width: 100%;
   background: var(--main-bg-color);
-  margin-bottom: 5em;
+  margin-bottom: 2em;
 }
 
 .nav-menu {
@@ -32,6 +33,9 @@ header {
           align-items: center;
   padding: 0 1.6rem;
   position: relative;
+  box-shadow: 2px 3px 21px 0px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 2px 3px 21px 0px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 2px 3px 21px 0px rgba(0, 0, 0, 0.12);
 }
 
 .nav-menu .menu-button {
@@ -49,16 +53,16 @@ header {
   display: flex;
 }
 
-.nav-menu ul a {
+.nav-menu ul .header-elements {
   text-decoration: none;
   color: #505666;
   text-transform: uppercase;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   height: 100%;
-  padding: 20px 1.2rem;
+  padding: 15px 1.2rem;
 }
 
-.nav-menu ul a:hover {
+.nav-menu ul .header-elements:hover {
   color: black;
   background: white;
 }
@@ -67,14 +71,100 @@ header {
   position: absolute;
   background: black;
   width: 100vw;
+  height: auto;
   left: 0;
-  top: 59.2px;
+  top: 47px;
   color: white;
   display: none;
+  padding: 2em 0;
+  overflow-x: scroll;
+}
+
+.nav-menu .dropdown .dropdown__content .dropdown__content__submenu {
+  border-right: 1px solid #a7aab2;
+  margin: 0 1.6em;
+}
+
+.nav-menu .dropdown .dropdown__content .dropdown__content__submenu h4 {
+  margin-bottom: 10px;
+  color: #a7aab2;
+}
+
+.nav-menu .dropdown .dropdown__content .dropdown__content__submenu .dropdown__content__submenu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-menu .dropdown .dropdown__content .dropdown__content__submenu .dropdown__content__submenu-list .dropdown__content__submenu-ancle {
+  margin-right: 25px;
+}
+
+.nav-menu .dropdown .dropdown__content .dropdown__content__submenu .dropdown__content__submenu-list .dropdown__content__submenu-ancle a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-menu .dropdown .dropdown__content .dropdown__content__submenu .dropdown__content__submenu-list .dropdown__content__submenu-ancle a img {
+  margin-bottom: 0.5em;
+}
+
+.nav-menu .dropdown .dropdown__content .dropdown__content__submenu .dropdown__content__submenu-list .dropdown__content__submenu-ancle a h5 {
+  font-weight: bold;
+  text-transform: none;
+  margin-bottom: 0.4em;
+  font-size: 1.6rem;
+}
+
+.nav-menu .dropdown .dropdown__content .dropdown__content__submenu .dropdown__content__submenu-list .dropdown__content__submenu-ancle a p {
+  color: #a7aab2;
+  text-transform: none;
+  font-size: 1.3rem;
+  width: 160px;
 }
 
 .nav-menu .dropdown:hover .dropdown__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.nav-menu .dropdown-b {
+  position: relative;
+}
+
+.nav-menu .dropdown-b .dropdown-b__content {
+  position: absolute;
+  top: 100%;
+  left: calc(50% - 80px);
+  width: 160px;
+  text-align: center;
+  padding: 1em;
+  background: black;
+  text-transform: none;
+  display: none;
+}
+
+.nav-menu .dropdown-b .dropdown-b__content p {
+  font-size: 1.2rem;
+  color: var(--graycolor);
+}
+
+.nav-menu .dropdown-b:hover .dropdown-b__content {
   display: block;
+  background: black;
+  color: white;
+}
+
+.nav-menu .dropdown-b:hover .dropdown-b__content:hover {
+  background: var(--graycolor);
+  color: black;
+}
+
+.nav-menu .dropdown-b:hover .dropdown-b__content:hover p {
+  color: black;
 }
 
 .mail-button {
@@ -95,8 +185,86 @@ header {
 }
 
 .yellow-bar {
+  display: block;
   width: 100%;
   background: #fd3;
-  padding: 1rem;
+  padding: 1rem 1.6rem;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: black;
+  font-weight: 300;
+}
+
+.hero-section {
+  display: -ms-grid;
+  display: grid;
+  margin: 0 auto;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+  gap: 1em;
+  padding: 0 1em;
+}
+
+.hero-section img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+}
+
+.hero-section p {
+  font-size: 3rem;
+  color: white;
+}
+
+.hero-section .hero-section__content__a {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / 4;
+  background-image: url("https://img-cdn.tnwcdn.com/image?fit=600%2C300&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fsucks.jpeg&signature=b7bac75b4e1890bcbe3d9f436a6f0f31");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-section .hero-section__content__b {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+}
+
+.hero-section .hero-section__content__c {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3 / 5;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  grid-row: 3 / 6;
+}
+
+.hero-section .hero-section__content__d {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4 / 5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+}
+
+.hero-section .hero-section__content__f {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  grid-row: 4 / 6;
 }
 /*# sourceMappingURL=main.css.map */
