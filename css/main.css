@@ -18,7 +18,10 @@ html {
 header {
   width: 100%;
   background: var(--main-bg-color);
-  margin-bottom: 2em;
+  display: block;
+  position: fixed;
+  top: 0;
+  z-index: 4;
 }
 
 .nav-menu {
@@ -78,6 +81,7 @@ header {
   display: none;
   padding: 2em 0;
   overflow-x: scroll;
+  z-index: 2;
 }
 
 .nav-menu .dropdown .dropdown__content .dropdown__content__submenu {
@@ -201,10 +205,13 @@ header {
   margin: 0 auto;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: (124px)[5];
-      grid-template-rows: repeat(5, 124px);
+  -ms-grid-rows: (128px)[5];
+      grid-template-rows: repeat(5, 128px);
   gap: 1em;
-  width: 95%;
+  width: 100%;
+  padding: 0 3em;
+  margin-top: 10em;
+  margin-bottom: 3em;
 }
 
 .hero-section .hero-section__content .hero-section__link {
@@ -217,6 +224,9 @@ header {
       -ms-flex-align: end;
           align-items: flex-end;
   height: 100%;
+  background: black;
+  background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(51%, rgba(0, 0, 0, 0.602679)), to(rgba(0, 0, 0, 0.112482)));
+  background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0.602679) 51%, rgba(0, 0, 0, 0.112482) 100%);
 }
 
 .hero-section .hero-section__content .hero-section__link img {
@@ -232,9 +242,20 @@ header {
   padding: 2.5em;
 }
 
+.hero-section .hero-section__content .hero-section__link .hero-section__text h5 {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.3em;
+}
+
 .hero-section .hero-section__content .hero-section__link .hero-section__text p {
   font-size: 3rem;
   color: white;
+  font-weight: bolder;
 }
 
 .hero-section .hero-section__content .hero-section__link--buton {
@@ -261,6 +282,20 @@ header {
   background-color: #90016e;
 }
 
+.hero-section .hero-section__content .hero-section__link--buton .hero-section__text h5 {
+  font-size: 2rem;
+  color: white;
+  font-weight: bolder;
+  text-transform: none;
+}
+
+.hero-section .hero-section__content .hero-section__link--buton .hero-section__text p {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
 .hero-section .hero-section__content--a {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -277,6 +312,14 @@ header {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1 / 3;
+}
+
+.hero-section .hero-section__content--b .hero-section__link .hero-section__text h5 {
+  font-size: 1.3rem;
+}
+
+.hero-section .hero-section__content--b .hero-section__link .hero-section__text p {
+  font-size: 2rem;
 }
 
 .hero-section .hero-section__content--c {
@@ -297,6 +340,14 @@ header {
   grid-row: 1 / 3;
 }
 
+.hero-section .hero-section__content--d .hero-section__link .hero-section__text h5 {
+  font-size: 1.3rem;
+}
+
+.hero-section .hero-section__content--d .hero-section__link .hero-section__text p {
+  font-size: 2rem;
+}
+
 .hero-section .hero-section__content--f {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -304,5 +355,67 @@ header {
   -ms-grid-row: 4;
   -ms-grid-row-span: 2;
   grid-row: 4 / 6;
+}
+
+.daily-news-section {
+  width: 100%;
+  padding: 0 3em;
+}
+
+.daily-news-section h2 {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  font-size: 2.3rem;
+  font-weight: bolder;
+}
+
+.daily-news-section .daily-news-section__container {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 20px;
+}
+
+.daily-news-section .daily-news-section__container .daily-news-section__content {
+  text-decoration: none;
+}
+
+.daily-news-section .daily-news-section__container .daily-news-section__content .daily-news-section__content--img {
+  position: relative;
+  margin-bottom: 1.5em;
+}
+
+.daily-news-section .daily-news-section__container .daily-news-section__content .daily-news-section__content--img img {
+  width: 100%;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 20% 100%, 0 67%, 0 0);
+          clip-path: polygon(100% 0, 100% 100%, 20% 100%, 0 67%, 0 0);
+}
+
+.daily-news-section .daily-news-section__container .daily-news-section__content .daily-news-section__content--img p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #a7aab2;
+  font-size: 2.5rem;
+}
+
+.daily-news-section .daily-news-section__container .daily-news-section__content .daily-news-section__content--text h4 {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.daily-news-section .daily-news-section__container .daily-news-section__content .daily-news-section__content--text h4:hover {
+  -webkit-text-decoration: underline #cc009954 2.5px;
+          text-decoration: underline #cc009954 2.5px;
 }
 /*# sourceMappingURL=main.css.map */
