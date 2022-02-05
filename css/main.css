@@ -201,38 +201,76 @@ header {
   margin: 0 auto;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: (1fr)[5];
-      grid-template-rows: repeat(5, 1fr);
+  -ms-grid-rows: (124px)[5];
+      grid-template-rows: repeat(5, 124px);
   gap: 1em;
-  padding: 0 1em;
+  width: 95%;
 }
 
-.hero-section img {
-  -o-object-fit: cover;
-     object-fit: cover;
+.hero-section .hero-section__content .hero-section__link {
+  position: relative;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 100%;
+}
+
+.hero-section .hero-section__content .hero-section__link img {
   width: 100%;
   height: 100%;
-  z-index: -100;
+  position: absolute;
+  z-index: -1;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
-.hero-section p {
+.hero-section .hero-section__content .hero-section__link .hero-section__text {
+  padding: 2.5em;
+}
+
+.hero-section .hero-section__content .hero-section__link .hero-section__text p {
   font-size: 3rem;
   color: white;
 }
 
-.hero-section .hero-section__content__a {
+.hero-section .hero-section__content .hero-section__link--buton {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+}
+
+.hero-section .hero-section__content .hero-section__link--buton a {
+  padding: 1em 2em;
+  background-color: #cc0099;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  border-radius: 100px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.hero-section .hero-section__content .hero-section__link--buton a:hover {
+  background-color: #90016e;
+}
+
+.hero-section .hero-section__content--a {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1 / 3;
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   grid-row: 1 / 4;
-  background-image: url("https://img-cdn.tnwcdn.com/image?fit=600%2C300&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fsucks.jpeg&signature=b7bac75b4e1890bcbe3d9f436a6f0f31");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.hero-section .hero-section__content__b {
+.hero-section .hero-section__content--b {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3 / 4;
@@ -241,7 +279,7 @@ header {
   grid-row: 1 / 3;
 }
 
-.hero-section .hero-section__content__c {
+.hero-section .hero-section__content--c {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-column: 3 / 5;
@@ -250,7 +288,7 @@ header {
   grid-row: 3 / 6;
 }
 
-.hero-section .hero-section__content__d {
+.hero-section .hero-section__content--d {
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
   grid-column: 4 / 5;
@@ -259,7 +297,7 @@ header {
   grid-row: 1 / 3;
 }
 
-.hero-section .hero-section__content__f {
+.hero-section .hero-section__content--f {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1 / 3;
