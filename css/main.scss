@@ -176,6 +176,7 @@ header {
             align-items: flex-end;
             height: 100%;
             background: rgb(0, 0, 0);
+            overflow: hidden;
             background: linear-gradient(
                 0deg,
                 rgba(0, 0, 0, 1) 0%,
@@ -188,9 +189,15 @@ header {
                 position: absolute;
                 z-index: -1;
                 align-self: flex-start;
+                transition: 0.5s;
+                transform: scale(1.2);
+                &:hover {
+                    transform: scale(1);
+                }
             }
             .hero-section__text {
                 padding: 2.5em;
+
                 h5 {
                     text-decoration: none;
                     color: white;

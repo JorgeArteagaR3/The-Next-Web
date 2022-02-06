@@ -225,6 +225,7 @@ header {
           align-items: flex-end;
   height: 100%;
   background: black;
+  overflow: hidden;
   background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(51%, rgba(0, 0, 0, 0.602679)), to(rgba(0, 0, 0, 0.112482)));
   background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0.602679) 51%, rgba(0, 0, 0, 0.112482) 100%);
 }
@@ -236,6 +237,15 @@ header {
   z-index: -1;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.hero-section .hero-section__content .hero-section__link img:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .hero-section .hero-section__content .hero-section__link .hero-section__text {
