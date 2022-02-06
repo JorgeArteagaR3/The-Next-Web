@@ -4,9 +4,644 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/main.css" />
         <title>The Next Web</title>
     </head>
     <body>
-        <main></main>
+        <header>
+            <nav class="nav-menu">
+                <svg class="menu-button" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M3 3h4v4H3zm14 0h4v4h-4zm-7 0h4v4h-4zm-7 7h4v4H3zm14 0h4v4h-4zm-7 0h4v4h-4zm-7 7h4v4H3zm14 0h4v4h-4zm-7 0h4v4h-4z"
+                        fill="#A7AAB2"
+                    />
+                </svg>
+                <a class="logo" href="#"
+                    ><svg
+                        class="logo__svg"
+                        xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 66 16"
+                    >
+                        <path
+                            d="M32.23993 5A6.00284 6.00284 0 0 1 34 9.24261V16h-6v-5.929a2.00249 2.00249 0 0 0-.58856-1.41424l-2.07239-2.07101A2.00315 2.00315 0 0 0 23.92346 6H22v10h-6V0h8.75189a6 6 0 0 1 4.24268 1.75739zM60 0v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 55.9234 10h-2.88214A5.99166 5.99166 0 0 0 54 6.75732V0h-6v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 43.9234 10H42V0h-6v16h8.75189a6.003 6.003 0 0 0 4.244-1.75739L51 12.23938V16h5.75189a6.003 6.003 0 0 0 4.244-1.75739l3.244-3.24267A6.00264 6.00264 0 0 0 66 6.75732V0zM0 6h4v10h6V6h4V0H0z"
+                        ></path>
+                    </svg>
+                </a>
+                <ul>
+                    <a class="header-elements" href=""><li>Home</li></a>
+                    <li class="header-elements dropdown">
+                        News
+                        <div class="dropdown__content">
+                            <div class="dropdown__content__submenu">
+                                <div>
+                                    <div>
+                                        <h4>GENERAL</h4>
+                                    </div>
+                                    <div
+                                        class="dropdown__content__submenu-list"
+                                    >
+                                        <div
+                                            class="dropdown__content__submenu-ancle"
+                                        >
+                                            <a href="">
+                                                <img
+                                                    src="https://img-cdn.tnwcdn.com/image?fit=160%2C90&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fnews-latest.jpg&signature=32ecb67934b71e808145ad05151f1786"
+                                                    alt=""
+                                                />
+                                                <h5>Latest</h5>
+                                                <p>The latest tech news</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown__content__submenu">
+                                <div>
+                                    <div>
+                                        <h4>CHANNEL</h4>
+                                    </div>
+                                    <div
+                                        class="dropdown__content__submenu-list"
+                                    >
+                                        <div
+                                            class="dropdown__content__submenu-ancle"
+                                        >
+                                            <a href="">
+                                                <img
+                                                    src="https://img-cdn.tnwcdn.com/image?fit=160%2C90&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fnews-plugged.jpg&signature=a696fb1a643ca004e7a933f50cb8b639"
+                                                    alt=""
+                                                />
+                                                <h5>Plugged</h5>
+                                                <p>
+                                                    Your sardonic source for
+                                                    consumer tech stories
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div
+                                            class="dropdown__content__submenu-ancle"
+                                        >
+                                            <a href="">
+                                                <img
+                                                    src="https://img-cdn.tnwcdn.com/image?fit=160%2C90&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fneural.jpg&signature=97e70efa006bf9756dc963dda67cb70b"
+                                                    alt=""
+                                                />
+                                                <h5>Neural</h5>
+                                                <p>
+                                                    Human-centric AI news and
+                                                    analysis
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div
+                                            class="dropdown__content__submenu-ancle"
+                                        >
+                                            <a href="">
+                                                <img
+                                                    src="https://img-cdn.tnwcdn.com/image?fit=160%2C90&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fshift-nav_2021-02-23-105938.jpg&signature=963427c6d5128fdc7ad34fa68e696daf"
+                                                    alt=""
+                                                />
+                                                <h5>Shift</h5>
+                                                <p>
+                                                    Driving the future of
+                                                    sustainable mobility
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div
+                                            class="dropdown__content__submenu-ancle"
+                                        >
+                                            <a href="">
+                                                <img
+                                                    src="https://img-cdn.tnwcdn.com/image?fit=160%2C90&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fgrowth-quarters.nav_2021-02-23-110956.jpg&signature=f8d4398b2338b28246aabd4daffa56c4"
+                                                    alt=""
+                                                />
+                                                <h5>Grow Quarters</h5>
+                                                <p>
+                                                    No-nonsense stories about
+                                                    startup growth
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div
+                                            class="dropdown__content__submenu-ancle"
+                                        >
+                                            <a href="">
+                                                <img
+                                                    src="https://img-cdn.tnwcdn.com/image?fit=160%2C90&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fnews-hardfork.jpg&signature=7e9d4a1556955e071e53ad04bbf2ebd5"
+                                                    alt=""
+                                                />
+                                                <h5>Hard Fork</h5>
+                                                <p>
+                                                    Inside money, markets, and
+                                                    Big Tech
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div
+                                            class="dropdown__content__submenu-ancle"
+                                        >
+                                            <a href="">
+                                                <img
+                                                    src="https://img-cdn.tnwcdn.com/image?fit=160%2C90&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fhouse_of_talent-nav_img.jpg&signature=ea28589cd1e58c17a018e2efc05b629a"
+                                                    alt=""
+                                                />
+                                                <h5>House of Talent</h5>
+                                                <p>
+                                                    The hottest new jobs in tech
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown__content__submenu">
+                                <div>
+                                    <div>
+                                        <h4>SPONSORED CHANNELS</h4>
+                                    </div>
+                                    <div
+                                        class="dropdown__content__submenu-list"
+                                    >
+                                        <div
+                                            class="dropdown__content__submenu-ancle"
+                                        >
+                                            <a href="">
+                                                <img
+                                                    src="https://img-cdn.tnwcdn.com/image?fit=160%2C90&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Ffuture-of-finance.jpeg&signature=8b04199c215450a3fabe0ffdb964f17a"
+                                                    alt=""
+                                                />
+                                                <h5>Future of Finance</h5>
+                                                <p>
+                                                    Help build the bank of the
+                                                    future
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div
+                                            class="dropdown__content__submenu-ancle"
+                                        >
+                                            <a href="">
+                                                <img
+                                                    src="https://img-cdn.tnwcdn.com/image?fit=160%2C90&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Freadme.jpeg&signature=3d2229c8a3963e87454978e263d073fc"
+                                                    alt=""
+                                                />
+                                                <h5>Readme</h5>
+                                                <p>Coding for Public Service</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header-elements dropdown-b">
+                        Events
+                        <div class="dropdown-b__content">
+                            <h4>TNW Conference</h4>
+                            <p>June 16 & 17, 2022</p>
+                        </div>
+                    </li>
+                    <a class="header-elements" href=""><li>Programs</li></a>
+                    <a class="header-elements" href=""><li>Spaces</li></a>
+                    <a class="header-elements" href=""
+                        ><li>Partner with us</li></a
+                    >
+                </ul>
+                <a href="">
+                    <svg
+                        class="mail-button"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                        role="img"
+                        preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 16 16"
+                    >
+                        <g fill="none">
+                            <path
+                                d="M4 3a2 2 0 0 0-2 2v.201l6 3.231l6-3.23V5a2 2 0 0 0-2-2H4zm10 3.337L8.237 9.44a.5.5 0 0 1-.474 0L2 6.337V11a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V6.337z"
+                                fill="currentColor"
+                            />
+                        </g>
+                    </svg>
+                </a>
+            </nav>
+
+            <a class="yellow-bar" href=""
+                >Join us at TNW Conference 2022 for insights into the future of
+                tech →</a
+            >
+        </header>
+        <main>
+            <section class="hero-section">
+                <div class="hero-section__content--a hero-section__content">
+                    <a class="hero-section__link" href="">
+                        <img
+                            src="https://img-cdn.tnwcdn.com/image?fit=600%2C300&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fnay.jpeg&signature=0812313dd9464efa0fbbfe9985fbf138"
+                            alt=""
+                        />
+                        <div class="hero-section__text">
+                            <h5>Plugged</h5>
+                            <p>
+                                You’re all wrong: NFT is actually pronounced
+                                ‘nay-fey-tay’
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="hero-section__content--b hero-section__content">
+                    <a class="hero-section__link" href="">
+                        <img
+                            src="https://img-cdn.tnwcdn.com/image?fit=600%2C300&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fsound_2022-02-02-123603_lrby.jpeg&signature=9b3c966312435640327b6265b308580a"
+                            alt=""
+                        />
+                        <div class="hero-section__text">
+                            <h5>Hard Fork</h5>
+                            <p>
+                                Chrome gets its first new logo in 8 years — come
+                                spot the differences
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="hero-section__content--c hero-section__content">
+                    <a class="hero-section__link" href="">
+                        <img
+                            src="https://img-cdn.tnwcdn.com/image?fit=600%2C300&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Freality.jpeg&signature=a9e4487fe9cc0bb89ff8ceefee7ae812"
+                            alt=""
+                        />
+                        <div class="hero-section__text">
+                            <h5>Plugged</h5>
+                            <p>
+                                Watch out for modded ‘silent’ AirTags that make
+                                it harder to stop stalkers
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="hero-section__content--d hero-section__content">
+                    <a class="hero-section__link" href="">
+                        <img
+                            src="https://img-cdn.tnwcdn.com/image?fit=600%2C300&url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fmultiverse.jpeg&signature=ee5cd2e16924ff94efc432ccf00d4e80"
+                            alt=""
+                        />
+                        <div class="hero-section__text">
+                            <h5>Neural</h5>
+                            <p>
+                                Why aliens and humans may not share the same
+                                reality
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="hero-section__content--f hero-section__content">
+                    <div class="hero-section__link hero-section__link--buton">
+                        <img
+                            src="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/home-header_advert-tnw2021-03.jpg"
+                            alt=""
+                        />
+                        <div class="hero-section__text">
+                            <h5>Mark your calendar for June 16 & 17!</h5>
+                            <p>Join us at TNW Conference 2022</p>
+                        </div>
+                        <a href="">Get tickets</a>
+                    </div>
+                </div>
+            </section>
+            <section class="daily-news-section">
+                <h2>Most popular stories today</h2>
+                <div class="daily-news-section__container">
+                    <a href="" class="daily-news-section__content">
+                        <div class="daily-news-section__content--img">
+                            <img
+                                src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2022/02/saucers.jpg"
+                                alt=""
+                            />
+                            <p>1</p>
+                        </div>
+                        <div class="daily-news-section__content--text">
+                            <h4>
+                                Why aliens and humans may not share the same
+                                reality
+                            </h4>
+                        </div>
+                    </a>
+                    <a href="" class="daily-news-section__content">
+                        <div class="daily-news-section__content--img">
+                            <img
+                                src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2022/02/header-image-bezos-rotterdamn-yacht-bridge.jpg"
+                                alt=""
+                            />
+                            <p>2</p>
+                        </div>
+                        <div class="daily-news-section__content--text">
+                            <h4>
+                                Good on Jeff Bezos for dismantling a historic
+                                bridge for his monster yacht
+                            </h4>
+                        </div>
+                    </a>
+                    <a href="" class="daily-news-section__content">
+                        <div class="daily-news-section__content--img">
+                            <img
+                                src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2022/02/Untitled-design-2.jpg"
+                                alt=""
+                            />
+                            <p>3</p>
+                        </div>
+                        <div class="daily-news-section__content--text">
+                            <h4>
+                                Behind the numbers: Meta’s nightmare on Wall
+                                Street
+                            </h4>
+                        </div>
+                    </a>
+                    <a href="" class="daily-news-section__content">
+                        <div class="daily-news-section__content--img">
+                            <img
+                                src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2022/02/Chrome-New-copy-1.jpg"
+                                alt=""
+                            />
+                            <p>4</p>
+                        </div>
+                        <div class="daily-news-section__content--text">
+                            <h4>
+                                Chrome gets its first new logo in 8 years — come
+                                spot the differences
+                            </h4>
+                        </div>
+                    </a>
+                    <a href="" class="daily-news-section__content">
+                        <div class="daily-news-section__content--img">
+                            <img
+                                src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2021/12/christian-dubovan-Y_x747Yshlw-unsplash.jpg"
+                                alt=""
+                            />
+                            <p>5</p>
+                        </div>
+                        <div class="daily-news-section__content--text">
+                            <h4>
+                                Northern Europe’s founders lack ambition —
+                                here’s what we should do
+                            </h4>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="latest-news-section">
+                <div class="section-title">
+                    <h2>Latest news</h2>
+                </div>
+                <div class="latest-news-section__container">
+                    <a href="" class="news-section_container__content">
+                        <div class="latest-news-section__content--img">
+                            <img
+                                src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FUntitled-design.jpg&signature=36c203b5c1e03f273b32da2911400abe"
+                                alt=""
+                            />
+                        </div>
+                        <div class="latest-news-section__content--text">
+                            <h4>Android</h4>
+                            <p>
+                                How to disable the in-app browser on the Gmail
+                                app for Android
+                            </p>
+                        </div>
+                    </a>
+                    <a href="" class="news-section_container__content">
+                        <div class="latest-news-section__content--img">
+                            <img
+                                src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F01%2FBrainAi-CALLUM-EDIT.jpg&signature=81ec9a9c299ece9a935e1de9a6c97202"
+                                alt=""
+                            />
+                        </div>
+                        <div class="latest-news-section__content--text">
+                            <h4>Artificial intelligence</h4>
+                            <p>
+                                We need to decouple AI from human brains and
+                                biases
+                            </p>
+                        </div>
+                    </a>
+                    <a href="" class="news-section_container__content">
+                        <div class="latest-news-section__content--img">
+                            <img
+                                src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FBitcoin-messiah-priest-religion-religious-leader-hed.jpg&signature=dfb17264e31cbd02d85a525fe8a318f7"
+                                alt=""
+                            />
+                        </div>
+                        <div class="latest-news-section__content--text">
+                            <h4>Cryptocurrency</h4>
+                            <p>
+                                Is Bitcoin technically a religion? A scholar
+                                investigates
+                            </p>
+                        </div>
+                    </a>
+                    <a href="" class="news-section_container__content">
+                        <div class="latest-news-section__content--img">
+                            <img
+                                src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FChrome-New-copy-1.jpg&signature=c4aed31a05214ce23cdc4554fedf303c"
+                                alt=""
+                            />
+                        </div>
+                        <div class="latest-news-section__content--text">
+                            <h4>Google</h4>
+                            <p>
+                                Chrome gets its first new logo in 8 years — come
+                                spot the differences
+                            </p>
+                        </div>
+                    </a>
+                    <a href="" class="news-section_container__content">
+                        <div class="latest-news-section__content--img">
+                            <img
+                                src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2Fheader-tesla-rolling-stop-feature.jpg&signature=f21ae442b4359d73e700d6420667e54c"
+                                alt=""
+                            />
+                        </div>
+                        <div class="latest-news-section__content--text">
+                            <h4>Tesla</h4>
+                            <p>
+                                Tesla’s ‘rolling stop’ feature mimicked dumb
+                                humans — and got 54K EVs recalled
+                            </p>
+                        </div>
+                    </a>
+                    <a href="" class="news-section_container__content">
+                        <div class="latest-news-section__content--img">
+                            <img
+                                src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2Fnft-nay-fey-tay-cryptocurrency.jpg&signature=d9df39a0aeba0d62b6da82d1f482cc0d"
+                                alt=""
+                            />
+                        </div>
+                        <div class="latest-news-section__content--text">
+                            <h4>Cryptocurrency</h4>
+                            <p>
+                                You’re all wrong: NFT is actually pronounced
+                                ‘nay-fey-tay’
+                            </p>
+                        </div>
+                    </a>
+                    <a href="" class="news-section_container__content">
+                        <div class="latest-news-section__content--img">
+                            <img
+                                src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FTwitter-topics.jpg&signature=2fee1c2015676115c320197ad43d86bb"
+                                alt=""
+                            />
+                        </div>
+                        <div class="latest-news-section__content--text">
+                            <h4>Twitter</h4>
+                            <p>
+                                How to navigate the confusing world of Twitter
+                                Topics
+                            </p>
+                        </div>
+                    </a>
+                    <a href="" class="news-section_container__content">
+                        <div class="latest-news-section__content--img">
+                            <img
+                                src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2Fmetaverse-law.jpeg&signature=cadce03c0b79e256cc690b6adf57efb7"
+                                alt=""
+                            />
+                        </div>
+                        <div class="latest-news-section__content--text">
+                            <h4>Augmented reality</h4>
+                            <p>
+                                The metaverse needs laws to protect users and
+                                data
+                            </p>
+                        </div>
+                    </a>
+                    <a href="" class="news-section_container__content">
+                        <div class="latest-news-section__content--img">
+                            <img
+                                src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2Fsaucers.jpg&signature=14161c34fa7eaeffdff928b7d602d741"
+                                alt=""
+                            />
+                        </div>
+                        <div class="latest-news-section__content--text">
+                            <h4>Space</h4>
+                            <p>
+                                Why aliens and humans may not share the same
+                                reality
+                            </p>
+                        </div>
+                    </a>
+                    <a href="" class="news-section_container__content">
+                        <div class="latest-news-section__content--img">
+                            <img
+                                src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FUntitled-design-2.jpg&signature=e21497a97e7e26f71468b50aec5e3a49"
+                                alt=""
+                            />
+                        </div>
+                        <div class="latest-news-section__content--text">
+                            <h4>Metaverse</h4>
+                            <p>
+                                Behind the numbers: Meta’s nightmare on Wall
+                                Street
+                            </p>
+                        </div>
+                    </a>
+                    <a href="" class="news-section_container__content">
+                        <div class="latest-news-section__content--img">
+                            <img
+                                src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FAI.jpg&signature=d867172238656489cfa9e0a2afe8c905"
+                                alt=""
+                            />
+                        </div>
+                        <div class="latest-news-section__content--text">
+                            <h4>Artificial intelligence</h4>
+                            <p>
+                                AI can now spot dead cells 100 times faster than
+                                people — which could help cure Alzheimer’s
+                            </p>
+                        </div>
+                    </a>
+                    <a href="" class="news-section_container__content">
+                        <div class="latest-news-section__content--img">
+                            <img
+                                src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F02%2FAIvHumanHed.jpg&signature=c7dd0d4f435cff82c92af94a288057ef"
+                                alt=""
+                            />
+                        </div>
+                        <div class="latest-news-section__content--text">
+                            <h4>Artificial intelligence</h4>
+                            <p>
+                                Humans v AI: We found out who’s better at making
+                                money
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="latest-news-button">
+                    <a href="">See all latests news</a>
+                </div>
+            </section>
+            <section class="contact-section">
+                <div class="contact-section__title">
+                    <h3>Get the snarkiest newsletter in tech</h3>
+                    <p>
+                        Subscribe to our weekly <a href=""> Big Spam</a> or
+                        check out our <a href=""> other newsletters.</a>
+                    </p>
+                </div>
+                <div class="contact-section__email-input">
+                    <div class="main-input-container">
+                        <input value="you@email.com" type="email" />
+                        <a href="">OK</a>
+                    </div>
+                </div>
+                <div class="contact-section__social-media">
+                    <a href=""
+                        ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true"
+                            role="img"
+                            preserveAspectRatio="xMidYMid meet"
+                            viewBox="0 0 100 100"
+                        >
+                            <path
+                                d="M82.026 14H17.974A3.974 3.974 0 0 0 14 17.974v64.053A3.974 3.974 0 0 0 17.974 86h34.483V58.118h-9.383V47.252h9.383v-8.014c0-9.3 5.68-14.363 13.976-14.363c3.974 0 7.389.295 8.385.428v9.719l-5.754.003c-4.512 0-5.385 2.144-5.385 5.29v6.938h10.76l-1.401 10.866h-9.359V86h18.348A3.974 3.974 0 0 0 86 82.026V17.974A3.974 3.974 0 0 0 82.026 14z"
+                                fill="currentColor"
+                            />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true"
+                            role="img"
+                            preserveAspectRatio="xMidYMid meet"
+                            viewBox="0 0 1024 1024"
+                        >
+                            <path
+                                d="M512 306.9c-113.5 0-205.1 91.6-205.1 205.1S398.5 717.1 512 717.1S717.1 625.5 717.1 512S625.5 306.9 512 306.9zm0 338.4c-73.4 0-133.3-59.9-133.3-133.3S438.6 378.7 512 378.7S645.3 438.6 645.3 512S585.4 645.3 512 645.3zm213.5-394.6c-26.5 0-47.9 21.4-47.9 47.9s21.4 47.9 47.9 47.9s47.9-21.3 47.9-47.9a47.84 47.84 0 0 0-47.9-47.9zM911.8 512c0-55.2.5-109.9-2.6-165c-3.1-64-17.7-120.8-64.5-167.6c-46.9-46.9-103.6-61.4-167.6-64.5c-55.2-3.1-109.9-2.6-165-2.6c-55.2 0-109.9-.5-165 2.6c-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6c46.9 46.9 103.6 61.4 167.6 64.5c55.2 3.1 109.9 2.6 165 2.6c55.2 0 109.9.5 165-2.6c64-3.1 120.8-17.7 167.6-64.5c46.9-46.9 61.4-103.6 64.5-167.6c3.2-55.1 2.6-109.8 2.6-165zm-88 235.8c-7.3 18.2-16.1 31.8-30.2 45.8c-14.1 14.1-27.6 22.9-45.8 30.2C695.2 844.7 570.3 840 512 840c-58.3 0-183.3 4.7-235.9-16.1c-18.2-7.3-31.8-16.1-45.8-30.2c-14.1-14.1-22.9-27.6-30.2-45.8C179.3 695.2 184 570.3 184 512c0-58.3-4.7-183.3 16.1-235.9c7.3-18.2 16.1-31.8 30.2-45.8s27.6-22.9 45.8-30.2C328.7 179.3 453.7 184 512 184s183.3-4.7 235.9 16.1c18.2 7.3 31.8 16.1 45.8 30.2c14.1 14.1 22.9 27.6 30.2 45.8C844.7 328.7 840 453.7 840 512c0 58.3 4.7 183.2-16.2 235.8z"
+                                fill="currentColor"
+                            />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true"
+                            role="img"
+                            preserveAspectRatio="xMidYMid meet"
+                            viewBox="0 0 1024 1024"
+                        >
+                            <path
+                                d="M928 254.3c-30.6 13.2-63.9 22.7-98.2 26.4a170.1 170.1 0 0 0 75-94a336.64 336.64 0 0 1-108.2 41.2A170.1 170.1 0 0 0 672 174c-94.5 0-170.5 76.6-170.5 170.6c0 13.2 1.6 26.4 4.2 39.1c-141.5-7.4-267.7-75-351.6-178.5a169.32 169.32 0 0 0-23.2 86.1c0 59.2 30.1 111.4 76 142.1a172 172 0 0 1-77.1-21.7v2.1c0 82.9 58.6 151.6 136.7 167.4a180.6 180.6 0 0 1-44.9 5.8c-11.1 0-21.6-1.1-32.2-2.6C211 652 273.9 701.1 348.8 702.7c-58.6 45.9-132 72.9-211.7 72.9c-14.3 0-27.5-.5-41.2-2.1C171.5 822 261.2 850 357.8 850C671.4 850 843 590.2 843 364.7c0-7.4 0-14.8-.5-22.2c33.2-24.3 62.3-54.4 85.5-88.2z"
+                                fill="currentColor"
+                            />
+                        </svg>
+                    </a>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
